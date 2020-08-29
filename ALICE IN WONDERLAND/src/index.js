@@ -12,8 +12,15 @@
 
 //Write a function to return the route to her home
 function find_Route(number){
-    
-    return null;
+    var sum1=0
+    var i=0
+    while(i<number)
+    {
+        var rev=number%10
+        sum1+=rev
+        number=Math.floor(number/10)
+    }
+    return sum1
 }
 
 //Run SpecRunner.html to check the Test Case.
