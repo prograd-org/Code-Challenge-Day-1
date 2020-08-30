@@ -11,9 +11,19 @@
 
 
 //Write a function to return the route to her home
-function find_Route(number){
-    
-    return null;
+function find_Route(number) {
+    // let no = number.split("")
+    // let add = no.reduce(function (initial, item) {
+    //     return initial + item;
+    // }, 0);
+    var sum = 0
+    var i = 0
+    while (i < number) {
+        var add = number % 10
+        sum += add
+        number = Math.floor(number / 10)
+    }
+    return sum
 }
 
 //Run SpecRunner.html to check the Test Case.
