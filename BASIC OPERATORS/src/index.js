@@ -7,10 +7,20 @@
 
 //write a function to return the value based on operator.
 function basicOp(operation,value1,value2){
-
-
-
-  return null;
-}
-
-//Run SpecRunner.html to check the Test Case
+      if((typeof(value1)==="number")&&(typeof(value2)==="number")){
+        if(operation==='/'){
+          return eval(`${value1} ${operation} ${value2}`);
+        }
+        else if(operation==='-'){
+          return eval(`${value1} ${operation} ${value2}`);
+        }
+        else if(operation==='*'){
+          return eval(`${value1} ${operation} ${value2}`);
+        }
+        else if(operation==="+"){
+          return eval(`${value1} ${operation} ${value2}`);
+        }
+        else{
+            return "Invalid Operator";
+      }
+}}
