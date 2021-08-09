@@ -4,13 +4,24 @@
 //The function should return result of numbers after applying the chosen operation.
 //if it is not a number the return Invalid Operator
 
-
 //write a function to return the value based on operator.
-function basicOp(operation,value1,value2){
-
-
-
-  return null;
+function basicOp(operation, value1, value2) {
+  switch (operation) {
+    case "+":
+      return value1 + value2;
+      break;
+    case "-":
+      return value1 - value2;
+      break;
+    case "*":
+      return value1 * value2;
+      break;
+    case "/":
+      return value1 / value2;
+      break;
+    default:
+      return "Invalid Operator";
+  }
 }
 
 //Run SpecRunner.html to check the Test Case
